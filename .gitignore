@@ -1,0 +1,21 @@
+# Compiled class files
+*.class
+*.jar
+
+# IDE-specific files
+/.idea/
+/.vscode/
+/bin/
+/out/
+/target/
+/build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Eclipse metadata (always ignore)
+.metadata/
+
+# Eclipse project settings (optional)
+.settings/
