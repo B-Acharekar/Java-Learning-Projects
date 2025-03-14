@@ -58,15 +58,5 @@
    │   ├── E-commerce-Backend/
    │   ├── URL-Shortener/
 ```
-💡 **Tip:** Push projects one-by-one as you complete them! Also, write a README for each project.
 
----
-## 🔥 Next Steps
-1. Pick a Java topic every 2-3 days & practice it
-2. Build the linked project to apply what you learn
-3. Push your code to GitHub regularly
-4. Add a README for each project explaining features
-
----
-Let me know if you want changes/additions! 🚀
 
