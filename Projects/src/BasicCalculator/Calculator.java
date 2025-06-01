@@ -1,51 +1,16 @@
 package BasicCalculator;
 
-import java.util.Scanner;
-
 public class Calculator {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        char choice;
-
-        do {
-            System.out.print("Enter first number: ");
-            double num1 = scanner.nextDouble();
-
-            System.out.print("Enter operator (+, -, *, /): ");
-            char operator = scanner.next().charAt(0);
-
-            System.out.print("Enter second number: ");
-            double num2 = scanner.nextDouble();
-
-            double result = 0;
-            boolean valid = true;
-
-            switch (operator) {
-                case '+': result = num1 + num2; break;
-                case '-': result = num1 - num2; break;
-                case '*': result = num1 * num2; break;
-                case '/': 
-                    if (num2 != 0) result = num1 / num2;
-                    else {
-                        System.out.println("Error: Division by zero is not allowed.");
-                        valid = false;
-                    }
-                    break;
-                default:
-                    System.out.println("Invalid operator!");
-                    valid = false;
-            }
-
-            if (valid) {
-                System.out.println("Result: " + result);
-            }
-
-            System.out.print("Do you want to perform another calculation? (y/n): ");
-            choice = scanner.next().charAt(0);
-            
-        } while (choice == 'y' || choice == 'Y');
-
-        System.out.println("Calculator closed.");
-        scanner.close();
+    public static double calculate(double num1, double num2, String operator) {
+        switch (operator) {
+            case "+": return num1 + num2;
+            case "-": return num1 - num2;
+            case "*": return num1 * num2;
+            case "/":
+                if (num2 != 0) return num1 / num2;
+                else throw new ArithmeticException("Cannot divide by zero");
+            default:
+                throw new IllegalArgumentException("Invalid operator: " + operator);
+        }
     }
 }
