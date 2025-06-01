@@ -1,6 +1,7 @@
 # Compiled class files
 *.class
 *.jar
+*.classpath
 
 # IDE-specific files
 /.idea/
